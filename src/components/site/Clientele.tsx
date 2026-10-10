@@ -8,9 +8,11 @@ import sachivalayaLogo from "@/assets/sachivalaya.png";
 import dcafeLogo from "@/assets/dcafe.png";
 import mkcLogo from "@/assets/mkc.jpg";
 import nkProteinsLogo from "@/assets/nk_proteins.jpg";
+import arvindGccLogo from "@/assets/arvind-gcc.png";
 
 const clients = [
   { name: "Welspun GCC",          logo: welspunLogo,    since: "2023" },
+  { name: "Arvind GCC",           logo: arvindGccLogo,  since: "Aug 2026" },
   { name: "Capital PG",           logo: capitalLogo,    since: "2024" },
   { name: "Stay More Homes",      logo: staymoreLogo,   since: "2024" },
   { name: "Kripal Homes",         logo: kripalLogo,     since: "2024" },
