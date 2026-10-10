@@ -28,12 +28,12 @@ const Approach = () => {
  
       <div className="container-luxe relative z-10">
         <div ref={ref} className="reveal max-w-3xl mb-10 md:mb-20 text-center mx-auto">
-          <span className="text-[9px] md:text-xs font-bold text-accent tracking-[0.4em] uppercase mb-4 block">Our Excellence</span>
-          <h2 className="font-display text-2xl md:text-5xl lg:text-7xl font-bold leading-[1.2] md:leading-[1.1]">
+          <span className="text-xs md:text-sm font-bold text-accent tracking-[0.25em] uppercase mb-3 block">Our Excellence</span>
+          <h2 className="font-display text-3xl md:text-5xl lg:text-7xl font-bold leading-[1.2] md:leading-[1.1]">
             The Shree Vinayak <br />
             <span className="italic text-gradient-gold">Advantage</span>
           </h2>
-          <p className="mt-4 md:mt-6 text-white/60 text-sm md:text-lg max-w-xl mx-auto">
+          <p className="mt-4 md:mt-6 text-white/70 text-base md:text-lg max-w-xl mx-auto">
             Combining traditional values with modern operational precision to deliver unmatched hospitality solutions.
           </p>
         </div>
@@ -56,8 +56,8 @@ const Approach = () => {
                   <it.icon className="w-6 h-6 md:w-10 md:h-10 text-white" />
                 </div>
                 
-                <h3 className="font-display text-lg md:text-2xl font-bold mb-2 md:mb-4 group-hover:text-primary transition-colors">{it.title}</h3>
-                <p className="text-white/60 leading-relaxed text-xs md:text-base group-hover:text-white/80 transition-colors line-clamp-3 md:line-clamp-none">{it.desc}</p>
+                <h3 className="font-display text-xl md:text-2xl font-bold mb-2 md:mb-4 group-hover:text-primary transition-colors">{it.title}</h3>
+                <p className="text-white/70 leading-relaxed text-sm md:text-base group-hover:text-white/90 transition-colors line-clamp-3 md:line-clamp-none">{it.desc}</p>
                 
                 <div className="mt-4 md:mt-8 h-1 w-0 bg-primary group-hover:w-full transition-all duration-700 rounded-full" />
               </div>

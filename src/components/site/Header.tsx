@@ -28,15 +28,15 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-elegant border-b border-border/50 transition-all duration-300">
-      <div className="container-luxe py-2 md:py-4">
+      <div className="container-luxe py-2.5 md:py-4">
         <div className="flex items-center justify-between">
           {/* Official Logo */}
           <a href="#top" className="flex items-center group">
-            <div className="relative h-12 md:h-20 w-auto overflow-hidden flex items-center justify-center transition-transform group-hover:scale-105">
+            <div className="relative h-16 md:h-20 w-auto flex items-center justify-center transition-transform group-hover:scale-105">
               <img 
                 src={logoFinal} 
                 alt="Shree Vinayak Hospitality Services" 
-                className="h-full w-auto object-contain"
+                className="h-full w-auto max-h-16 md:max-h-20 object-contain"
               />
             </div>
           </a>

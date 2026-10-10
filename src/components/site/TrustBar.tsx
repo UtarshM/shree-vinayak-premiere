@@ -20,8 +20,8 @@ const TrustBar = () => {
                 <it.icon className="w-5 h-5 md:w-6 md:h-6 text-white" />
               </div>
               <div>
-                <div className="font-display text-lg md:text-2xl font-bold text-primary leading-none">{it.value}</div>
-                <div className="text-[10px] md:text-sm text-muted-foreground mt-1 uppercase tracking-wider">{it.label}</div>
+                <div className="font-display text-xl md:text-2xl font-bold text-primary leading-none">{it.value}</div>
+                <div className="text-xs md:text-sm text-muted-foreground mt-1 uppercase tracking-wider font-medium">{it.label}</div>
               </div>
             </div>
           ))}

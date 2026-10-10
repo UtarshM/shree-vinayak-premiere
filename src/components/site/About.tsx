@@ -21,18 +21,18 @@ const About = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-elegant">
               <img src={founderImg} alt="Arvind Singh - CEO and Founder, Shree Vinayak Hospitality Services" className="w-full h-full object-cover object-top aspect-square md:aspect-[4/3]" loading="lazy" width={1280} height={1280} />
             </div>
-            <div className="absolute -bottom-3 -right-3 md:-bottom-8 md:-right-8 glass rounded-2xl px-3 py-2 md:px-6 md:py-5 shadow-elegant max-w-[140px] md:max-w-[220px] z-10">
+            <div className="absolute -bottom-3 -right-3 md:-bottom-8 md:-right-8 glass rounded-2xl px-3.5 py-2.5 md:px-6 md:py-5 shadow-elegant max-w-[160px] md:max-w-[220px] z-10">
               <div className="font-display text-2xl md:text-4xl font-bold text-gradient-gold">15+</div>
-              <div className="text-[9px] md:text-sm text-primary mt-0.5 font-medium leading-tight">Years of Excellence in Hospitality.</div>
+              <div className="text-xs md:text-sm text-primary mt-0.5 font-medium leading-tight">Years of Excellence in Hospitality.</div>
             </div>
           </div>
- 
+
           <div className="order-1 lg:order-2">
-            <span className="text-[9px] md:text-xs font-semibold text-accent tracking-[0.3em] uppercase">Leadership & Vision</span>
-            <h2 className="mt-2 md:mt-4 font-display text-2xl md:text-5xl lg:text-6xl font-semibold text-primary leading-tight">
+            <span className="text-xs md:text-sm font-bold text-accent tracking-[0.25em] uppercase">Leadership & Vision</span>
+            <h2 className="mt-2 md:mt-4 font-display text-3xl md:text-5xl lg:text-6xl font-bold text-primary leading-tight">
               A legacy of <span className="italic text-gradient-gold">hands-on</span> leadership.
             </h2>
-            <div className="mt-4 space-y-3 text-sm md:text-lg text-muted-foreground leading-relaxed">
+            <div className="mt-4 space-y-3 text-base md:text-lg text-muted-foreground leading-relaxed">
               <p>
                 With over 15 years of specialized expertise in the hospitality industry, Arvind Singh 
                 brings a potent blend of operational leadership and entrepreneurial vision to 

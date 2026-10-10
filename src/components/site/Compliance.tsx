@@ -16,8 +16,8 @@ const Compliance = () => {
     <section className="py-10 md:py-32 bg-background">
       <div className="container-luxe">
         <div ref={ref} className="reveal text-center max-w-3xl mx-auto mb-8 md:mb-14">
-          <span className="text-[9px] md:text-xs font-semibold text-accent tracking-[0.3em] uppercase">Compliance & Certifications</span>
-          <h2 className="mt-2 md:mt-4 font-display text-2xl md:text-5xl lg:text-6xl font-semibold text-primary leading-tight">
+          <span className="text-xs md:text-sm font-bold text-accent tracking-[0.25em] uppercase">Compliance & Certifications</span>
+          <h2 className="mt-2 md:mt-4 font-display text-3xl md:text-5xl lg:text-6xl font-bold text-primary leading-tight">
             Fully compliant. <span className="italic text-accent">Government registered.</span>
           </h2>
         </div>

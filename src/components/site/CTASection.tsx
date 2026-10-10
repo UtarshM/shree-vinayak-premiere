@@ -14,7 +14,7 @@ const CTASection = () => {
           <div className="relative px-6 md:px-16 lg:px-20 py-16 md:py-24 text-white">
             <div className="inline-flex items-center gap-2 glass-dark rounded-full px-3 py-1.5 mb-6">
               <Zap className="w-4 h-4 text-accent" />
-              <span className="text-[10px] md:text-xs font-medium tracking-wide uppercase">Fast Onboarding · Customised Solutions</span>
+              <span className="text-xs md:text-sm font-medium tracking-wide uppercase">Fast Onboarding · Customised Solutions</span>
             </div>
             <h2 className="font-display text-3xl md:text-6xl lg:text-7xl font-semibold leading-tight max-w-4xl">
               Looking for reliable <span className="italic text-white">hospitality services?</span>

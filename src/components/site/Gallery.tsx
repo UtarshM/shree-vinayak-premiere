@@ -94,8 +94,8 @@ const Gallery = () => {
     <section id="gallery" className="pt-6 pb-10 md:pt-16 md:pb-24 bg-white">
       <div className="container-luxe">
         <div ref={ref} className="reveal text-center max-w-3xl mx-auto mb-10 md:mb-16">
-          <span className="text-[9px] md:text-xs font-semibold text-accent tracking-[0.3em] uppercase">Showcase</span>
-          <h2 className="mt-2 md:mt-4 font-display text-2xl md:text-5xl lg:text-6xl font-semibold text-primary leading-tight">
+          <span className="text-xs md:text-sm font-bold text-accent tracking-[0.25em] uppercase">Showcase</span>
+          <h2 className="mt-2 md:mt-4 font-display text-3xl md:text-5xl lg:text-6xl font-bold text-primary leading-tight">
             Excellence in <span className="italic text-brand-green">Every Detail.</span>
           </h2>
         </div>
@@ -118,8 +118,8 @@ const Gallery = () => {
                 >
                   <img src={p.url} alt={p.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-4 md:p-8">
-                    <span className="text-[8px] md:text-xs font-medium text-white/70 uppercase tracking-widest mb-1">{p.category}</span>
-                    <h3 className="text-xs md:text-xl font-semibold text-white line-clamp-1">{p.title}</h3>
+                    <span className="text-xs md:text-xs font-semibold text-white/90 uppercase tracking-wider mb-1">{p.category}</span>
+                    <h3 className="text-sm md:text-xl font-bold text-white line-clamp-1">{p.title}</h3>
                   </div>
                 </div>
               ))}
@@ -146,10 +146,10 @@ const Gallery = () => {
                   <div className="absolute inset-x-0 bottom-0 p-4 md:p-6 bg-gradient-to-t from-black/80 to-transparent">
                     <div className="flex justify-between items-end">
                       <div className="max-w-[80%]">
-                        <h3 className="text-xs md:text-lg font-semibold text-white line-clamp-1">{v.title}</h3>
-                        <p className="text-[9px] md:text-xs text-white/70 mt-0.5 line-clamp-1">{v.description}</p>
+                        <h3 className="text-sm md:text-lg font-bold text-white line-clamp-1">{v.title}</h3>
+                        <p className="text-xs text-white/80 mt-0.5 line-clamp-1">{v.description}</p>
                       </div>
-                      <span className="text-[8px] md:text-xs font-medium text-white/60 bg-white/10 px-1.5 py-0.5 rounded">{v.duration}</span>
+                      <span className="text-xs font-medium text-white/90 bg-white/10 px-2 py-0.5 rounded">{v.duration}</span>
                     </div>
                   </div>
                 </div>

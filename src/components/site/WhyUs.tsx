@@ -18,23 +18,23 @@ const WhyUs = () => {
       <div className="container-luxe">
         <div ref={ref} className="reveal grid lg:grid-cols-2 gap-10 md:gap-16 items-center">
           <div>
-            <span className="text-[9px] md:text-xs font-semibold text-accent tracking-[0.3em] uppercase">Why Choose Us</span>
-            <h2 className="mt-2 md:mt-4 font-display text-2xl md:text-5xl lg:text-6xl font-semibold text-primary leading-tight">
+            <span className="text-xs md:text-sm font-bold text-accent tracking-[0.25em] uppercase">Why Choose Us</span>
+            <h2 className="mt-2 md:mt-4 font-display text-3xl md:text-5xl lg:text-6xl font-bold text-primary leading-tight">
               Built on trust. <span className="italic text-gradient-gold">Delivered</span> with care.
             </h2>
-            <p className="mt-3 md:mt-6 text-sm md:text-lg text-muted-foreground">
+            <p className="mt-3 md:mt-6 text-base md:text-lg text-muted-foreground">
               Five reasons India's leading organizations choose Shree Vinayak.
             </p>
- 
-            <ul className="mt-6 md:mt-10 space-y-3 md:space-y-5">
+
+            <ul className="mt-6 md:mt-10 space-y-3.5 md:space-y-5">
               {reasons.map((r) => (
-                <li key={r.t} className="flex items-start gap-3 md:gap-4 group">
-                  <div className="w-6 h-6 md:w-8 md:h-8 rounded-full bg-gradient-gold flex items-center justify-center flex-shrink-0 mt-0.5 shadow-gold group-hover:scale-110 transition-transform">
-                    <Check className="w-3 h-3 md:w-4 md:h-4 text-white stroke-[3]" />
+                <li key={r.t} className="flex items-start gap-3.5 md:gap-4 group">
+                  <div className="w-7 h-7 md:w-8 md:h-8 rounded-full bg-gradient-gold flex items-center justify-center flex-shrink-0 mt-0.5 shadow-gold group-hover:scale-110 transition-transform">
+                    <Check className="w-3.5 h-3.5 md:w-4 md:h-4 text-white stroke-[3]" />
                   </div>
                   <div>
-                    <div className="font-display text-base md:text-xl font-semibold text-primary leading-snug">{r.t}</div>
-                    <div className="text-[11px] md:text-base text-muted-foreground mt-0.5 leading-relaxed">{r.d}</div>
+                    <div className="font-display text-base md:text-xl font-bold text-primary leading-snug">{r.t}</div>
+                    <div className="text-sm md:text-base text-muted-foreground mt-1 leading-relaxed">{r.d}</div>
                   </div>
                 </li>
               ))}

@@ -52,11 +52,11 @@ const Services = () => {
     <section id="services" className="py-10 md:py-32 bg-background">
       <div className="container-luxe">
         <div ref={ref} className="reveal max-w-3xl mb-10 md:mb-16">
-          <span className="text-[9px] md:text-xs font-semibold text-accent tracking-[0.3em] uppercase">Our Services</span>
-          <h2 className="mt-2 md:mt-4 font-display text-2xl md:text-5xl lg:text-6xl font-semibold text-primary leading-tight">
+          <span className="text-xs md:text-sm font-bold text-accent tracking-[0.25em] uppercase">Our Services</span>
+          <h2 className="mt-2 md:mt-4 font-display text-3xl md:text-5xl lg:text-6xl font-bold text-primary leading-tight">
             Seven pillars of <span className="italic text-gradient-gold">premium</span> hospitality.
           </h2>
-          <p className="mt-3 md:mt-6 text-sm md:text-lg text-muted-foreground">
+          <p className="mt-3 md:mt-6 text-base md:text-lg text-muted-foreground">
             A complete hospitality stack — designed for businesses that demand consistency,
             quality and operational excellence.
           </p>
@@ -103,8 +103,8 @@ const ServiceCard = ({ icon: Icon, title, desc, img, delay }: { icon: any; title
             <ArrowUpRight className="w-4 h-4 md:w-5 md:h-5 text-accent group-hover:text-accent-foreground transition-colors" />
           </div>
         </div>
-        <p className="mt-3 text-xs md:text-base text-muted-foreground leading-relaxed line-clamp-3 md:line-clamp-none">{desc}</p>
-        <div className="mt-4 inline-flex items-center gap-2 text-[10px] md:text-sm font-semibold text-accent overflow-hidden uppercase tracking-wider">
+        <p className="mt-3 text-sm md:text-base text-muted-foreground leading-relaxed line-clamp-3 md:line-clamp-none">{desc}</p>
+        <div className="mt-4 inline-flex items-center gap-2 text-xs md:text-sm font-semibold text-accent overflow-hidden uppercase tracking-wider">
           <span>Learn More</span>
           <span className="inline-block transition-transform duration-500 group-hover:translate-x-2">→</span>
         </div>

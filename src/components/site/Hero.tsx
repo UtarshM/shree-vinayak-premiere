@@ -25,7 +25,7 @@ const Hero = () => {
         <div className="max-w-3xl">
           <div className="inline-flex items-center gap-2 glass-dark rounded-full px-3 py-1.5 mb-6 md:mb-8 animate-fade-in">
             <Sparkles className="w-4 h-4 text-accent" />
-            <span className="text-[10px] md:text-sm font-medium text-white/90 tracking-wide">
+            <span className="text-xs md:text-sm font-medium text-white/90 tracking-wide">
               Trusted Pan-India Hospitality Partner · Since 2014
             </span>
           </div>
