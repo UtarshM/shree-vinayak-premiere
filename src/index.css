@@ -1,0 +1,179 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Shree Vinayak Hospitality — Brand Color System
+   Crimson Red (#C0392B) + Forest Green (#2E7D32) + Warm Ivory/Cream */
+
+@layer base {
+  :root {
+    /* Sophisticated, premium hospitality background */
+    --background: 40 20% 98%;
+    --foreground: 0 0% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 15 80% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 15 80% 10%;
+
+    /* Deep Burgundy — Luxurious brand primary */
+    --primary: 15 80% 50%; /* Vibrant Orange */
+    --primary-foreground: 0 0% 100%;
+
+    /* Soft Champagne secondary */
+    --secondary: 15 20% 98%;
+    --secondary-foreground: 15 80% 10%;
+
+    --muted: 15 10% 96%;
+    --muted-foreground: 15 20% 40%;
+
+    /* Elegant Forest Green accent */
+    --accent: 150 60% 25%; /* Forest Green from logo */
+    --accent-foreground: 0 0% 100%;
+    --accent-glow: 150 50% 40%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 15 20% 90%;
+    --input: 15 20% 90%;
+    --ring: 15 80% 50%;
+
+    --radius: 1rem;
+
+    /* Brand Gradients — Updated for Orange/Green identity */
+    --gradient-gold: linear-gradient(135deg, hsl(15 90% 55%), hsl(15 100% 65%)); /* Now Vibrant Orange */
+    --gradient-cream: linear-gradient(180deg, hsl(15 20% 99%), hsl(15 20% 95%));
+    --gradient-dark: linear-gradient(135deg, hsl(15 80% 20%), hsl(15 70% 30%));
+    --gradient-overlay: linear-gradient(180deg, hsla(15, 80%, 10%, 0.7) 0%, hsla(15, 80%, 5%, 0.98) 100%);
+    --gradient-hero: linear-gradient(135deg, hsla(15, 80%, 30%, 0.95) 0%, hsla(150, 40%, 15%, 0.95) 100%);
+
+    /* Shadows */
+    --shadow-soft: 0 10px 40px -15px hsla(0, 0%, 0%, 0.2);
+    --shadow-elegant: 0 20px 60px -20px hsla(0, 0%, 0%, 0.3);
+    --shadow-gold: 0 10px 40px -10px hsla(45, 90%, 70%, 0.4);
+    --shadow-glow: 0 0 60px hsla(45, 100%, 85%, 0.3);
+
+    /* Glass */
+    --glass-bg: hsla(0, 0%, 100%, 0.85);
+    --glass-border: hsla(0, 0%, 0%, 0.05);
+
+    --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-elegant: cubic-bezier(0.16, 1, 0.3, 1);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 355 60% 30%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 150 40% 25%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 90%;
+    --sidebar-ring: 355 60% 30%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "ss01", "cv11";
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-family: 'Playfair Display', Georgia, serif;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer components {
+  .glass {
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+  }
+
+  .glass-dark {
+    background: hsla(4, 65%, 22%, 0.65);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid hsla(4, 65%, 45%, 0.18);
+  }
+
+  .text-gradient-gold {
+    background: linear-gradient(135deg, hsl(15 90% 50%), hsl(15 100% 65%));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .text-gradient-green {
+    background: linear-gradient(135deg, hsl(150 50% 35%), hsl(150 60% 50%));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .container-luxe {
+    @apply mx-auto px-4 md:px-10 lg:px-16;
+    max-width: 1400px;
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s var(--transition-elegant), transform 0.8s var(--transition-elegant);
+  }
+
+  .reveal.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@layer utilities {
+  .shadow-soft { box-shadow: var(--shadow-soft); }
+  .shadow-elegant { box-shadow: var(--shadow-elegant); }
+  .shadow-gold { box-shadow: var(--shadow-gold); }
+  .shadow-glow { box-shadow: var(--shadow-glow); }
+  .bg-gradient-gold { background: var(--gradient-gold); }
+  .bg-gradient-cream { background: var(--gradient-cream); }
+  .bg-gradient-dark { background: var(--gradient-dark); }
+  .bg-gradient-hero { background: var(--gradient-hero); }
+  .bg-brand-red { background-color: hsl(355 60% 30%); }
+  .bg-brand-green { background-color: hsl(150 40% 25%); }
+  .text-brand-red { color: hsl(355 60% 30%); }
+  .text-brand-green { color: hsl(150 40% 25%); }
+
+  /* Scrollbar Utilities */
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .animate-marquee {
+    display: flex;
+    width: max-content;
+    animation: marquee 40s linear infinite;
+  }
+
+  .animate-marquee:hover {
+    animation-play-state: paused;
+  }
+}
